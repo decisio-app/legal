@@ -23,6 +23,10 @@
             color: #333;
             margin-top: 30px;
         }
+        h3 {
+            color: #555;
+            margin-top: 20px;
+        }
         p {
             margin: 15px 0;
         }
@@ -33,18 +37,21 @@
         strong {
             color: #000;
         }
+        a {
+            color: #007AFF;
+        }
     </style>
 </head>
 <body>
     <h1>Privacy Policy for Decisio</h1>
-    
-    <p><strong>Last updated: October 2025</strong></p>
+
+    <p><strong>Last updated: April 2026</strong></p>
 
     <h2>Overview</h2>
     <p>Decisio ("we", "our", or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Decisio mobile application.</p>
 
     <h2>Information We Collect</h2>
-    
+
     <h3>Information You Provide</h3>
     <ul>
         <li><strong>Decision Data</strong>: The decisions, criteria, options, and analyses you create within the app</li>
@@ -57,6 +64,24 @@
         <li><strong>Usage Analytics</strong>: App performance data and crash reports (if you opt-in)</li>
     </ul>
 
+    <h3>Subscription and Purchase Information</h3>
+    <p>When you purchase a Decisio Pro subscription or start a free trial, Apple processes the payment. Apple, not Decisio, receives your billing information (credit card, Apple ID email, billing address). We do <strong>not</strong> have access to that information.</p>
+    <p>From Apple's StoreKit framework we receive only:</p>
+    <ul>
+        <li>Anonymous transaction identifiers</li>
+        <li>Product identifiers (e.g., <code>com.draev.decisio.pro.annual</code>)</li>
+        <li>Subscription status (active, expired, in trial, canceled)</li>
+        <li>Purchase and renewal dates</li>
+        <li>Original transaction ID (for restore purchases)</li>
+    </ul>
+    <p>We use this information to:</p>
+    <ul>
+        <li>Unlock Pro features on your device</li>
+        <li>Verify subscription status when you restore purchases on a new device</li>
+        <li>Anonymously measure which subscription plans are most popular (aggregated analytics)</li>
+    </ul>
+    <p>We never see your name, email, payment method, or Apple Account identifier.</p>
+
     <h2>How We Use Your Information</h2>
     <p>We use the collected information to:</p>
     <ul>
@@ -64,12 +89,14 @@
         <li>Save your decision processes locally on your device</li>
         <li>Improve app performance and user experience</li>
         <li>Provide customer support when requested</li>
+        <li>Manage and verify subscription entitlements</li>
     </ul>
 
     <h2>Data Storage and Security</h2>
     <ul>
         <li><strong>Local Storage (Default)</strong>: Your decision data is stored locally on your device using Core Data</li>
         <li><strong>Optional iCloud Sync</strong>: If enabled in iOS settings, Apple's iCloud may sync your data via your Apple ID. We do not have access to your iCloud data.</li>
+        <li><strong>Subscription Receipts</strong>: StoreKit stores purchase receipts on your device and on Apple's servers. We verify them on-device through StoreKit 2.</li>
         <li><strong>Security</strong>: We implement appropriate security measures to protect your information</li>
     </ul>
 
@@ -77,7 +104,15 @@
     <p>We do not sell, trade, or otherwise transfer your personal information to third parties. Your decision data remains private and is stored only on your device and/or your iCloud account if you enable sync.</p>
 
     <h2>Third-Party Services</h2>
-    <p>We do not include third‑party advertising SDKs. Anonymous crash/performance analytics may be collected only if you opt-in via system prompts.</p>
+    <p>We do not include third-party advertising SDKs. We may use privacy-oriented analytics and attribution tools to understand how the app is used and which acquisition channels work.</p>
+    <ul>
+        <li><strong>Apple StoreKit</strong>: subscription and purchase processing (required for in-app subscriptions)</li>
+        <li><strong>Firebase Analytics</strong>: anonymous usage analytics (events only, no decision content)</li>
+        <li><strong>Firebase Crashlytics</strong>: crash reporting and stability diagnostics</li>
+        <li><strong>Amplitude</strong> (optional): product analytics (funnels/retention) using anonymous identifiers</li>
+        <li><strong>Adjust</strong> (optional): attribution (campaign/source) for install measurement (SKAdNetwork / Apple Search Ads)</li>
+    </ul>
+    <p>We never send the content of your decisions (titles/options/criteria text) to analytics providers.</p>
 
     <h2>Children's Privacy</h2>
     <p>Our app is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
@@ -88,7 +123,7 @@
     <h2>Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
     <ul>
-        <li>Email: support@decisio.app</li>
+        <li>Email: dmitrii.raev@gmail.com</li>
     </ul>
 
     <h2>Your Rights</h2>
@@ -97,10 +132,10 @@
         <li>Access your personal information</li>
         <li>Delete your personal information (by deleting the app)</li>
         <li>Opt-out of analytics (in app settings)</li>
+        <li>Cancel subscriptions at any time through your Apple ID settings (see our <a href="terms.html">Terms of Use</a> for details)</li>
     </ul>
 
     <h2>Compliance</h2>
     <p>This Privacy Policy complies with applicable privacy laws including GDPR, CCPA, and other regional privacy regulations.</p>
 </body>
 </html>
-
